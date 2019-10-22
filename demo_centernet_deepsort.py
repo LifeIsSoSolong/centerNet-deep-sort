@@ -1,8 +1,7 @@
 import os
 import cv2
 import numpy as np
-
-
+import argparse
 #CenterNet
 import sys
 CENTERNET_PATH = '/home/kaikai/anaconda3/envs/CenterNet_DeepSort/centerNet-deep-sort/CenterNet/src/lib'
@@ -10,44 +9,12 @@ sys.path.insert(0, CENTERNET_PATH)
 from detectors.detector_factory import detector_factory
 from opts import opts
 
-
-MODEL_PATH = './CenterNet/models/ctdet_coco_dla_2x.pth'
-ARCH = 'dla_34'
-
-#MODEL_PATH = './CenterNet/models/ctdet_coco_resdcn18.pth'
-#ARCH = 'resdcn_18'
-
-
-
-TASK = 'ctdet' # or 'multi_pose' for human pose estimation
-opt = opts().init('{} --load_model {} --arch {}'.format(TASK, MODEL_PATH, ARCH).split(' '))
-
-#vis_thresh
-opt.vis_thresh = 0.5
-
-
-#input_type
-opt.input_type = 'vid'   # for video, 'vid',  for webcam, 'webcam', for ip camera, 'ipcam'
-
-#------------------------------
-# for video
-# opt.vid_path = 'MOT16-11.mp4'  #
-opt.vid_path = 'video3.avi'
-#------------------------------
-# for webcam  (webcam device index is required)
-opt.webcam_ind = 0
-#------------------------------
-# for ipcamera (camera url is required.this is dahua url format)
-opt.ipcam_url = 'rtsp://{0}:{1}@IPAddress:554/cam/realmonitor?channel={2}&subtype=1'
-# ipcamera camera number
-opt.ipcam_no = 8
-#------------------------------
-
-
 from deep_sort import DeepSort
 from util import COLORS_10, draw_bboxes
 
 import time
+
+
 
 
 def bbox_to_xywh_cls_conf(bbox):
@@ -81,7 +48,7 @@ class Detector(object):
 
         self.write_video = True
 
-    def open(self, video_path):
+    def open(self):
 
         if opt.input_type == 'webcam':
             self.vdo.open(opt.webcam_ind)
@@ -106,7 +73,7 @@ class Detector(object):
         self.area = 0, 0, self.im_width, self.im_height
         if self.write_video:
             fourcc = cv2.VideoWriter_fourcc(*'MJPG')
-            self.output = cv2.VideoWriter("demo1.avi", fourcc, 20, (self.im_width, self.im_height))
+            self.output = cv2.VideoWriter("zkk_results/{}/demo_{}.avi".format(opt.arch, opt.vid_path.split('/')[-1].split('.')[0]), fourcc, 20, (self.im_width, self.im_height))
         #return self.vdo.isOpened()
 
 
@@ -154,19 +121,39 @@ class Detector(object):
 
 
 if __name__ == "__main__":
-    import sys
-
-    # if len(sys.argv) == 1:
-    #     print("Usage: python demo_yolo3_deepsort.py [YOUR_VIDEO_PATH]")
-    # else:
     cv2.namedWindow("test", cv2.WINDOW_NORMAL)
     cv2.resizeWindow("test", 800, 600)
+#------------------------------------------
+    args = argparse.ArgumentParser()
+    args.add_argument('--task', default='ctdet',
+                             help='ctdet | ddd | multi_pose | exdet')
+    args.add_argument('--model', default='dla_34',
+                             help='det backbone model: dla_34| resdcn_18 | resdcn_101')
+    args.add_argument('--input_type', default='video',
+                             help='video | webcam')
+    args.add_argument('--video_path', default='zkk_videos/MOT16-11.mp4',
+                             help='input video path')
+    args.add_argument('--webcam_ind', default=0)
 
-    #opt = opts().init()
+    arch_modelpath = {'dla_34': './CenterNet/models/ctdet_coco_dla_2x.pth',
+                      'resdcn_18': './CenterNet/models/ctdet_coco_resdcn18.pth',
+                      'resdcn_101': './CenterNet/models/ctdet_coco_resdcn101.pth'}
+
+    input_parse = args.parse_args()
+    TASK = input_parse.task
+    ARCH = input_parse.model
+    MODEL_PATH = arch_modelpath[ARCH]
+
+    opt = opts().init('{} --load_model {} --arch {}'.format(TASK, MODEL_PATH, ARCH).split(' '))
+    opt.input_type = input_parse.input_type
+    if opt.input_type == 'video':
+        opt.vid_path = input_parse.video_path
+    else:
+        opt.webcam_ind = input_parse.webcam_ind
+    # vis_thresh
+    opt.vis_thresh = 0.5
+    opt.arch = ARCH
+#------------------------------------------
     det = Detector(opt)
-
-    # det.open("D:\CODE\matlab sample code/season 1 episode 4 part 5-6.mp4")
-    # det.open("MOT16-11.mp4")
-    det.open("video4.avi")
-
+    det.open()
     det.detect()

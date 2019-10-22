@@ -38,27 +38,17 @@ e.g) CENTERNET_PATH = '/home/kyy/centerNet-deep-sort/CenterNet/src/lib/'
 Using sample video, we can track multi person.   
 
 ```
-python demo_centernet_deepsort.py
+python demo_centernet_deepsort.py --model dla_34 --input_type video --video_path ' zkk_videos/MOT16-11.mp4'
 ```
 
 
-for webcam, modify two lines
+for webcam
 
 ```
-opt.input_type = 'webcam'
-//webcam device number 
-opt.webcam_ind = 0 
+python demo_centernet_deepsort.py --input_type webcam --webcam_ind 0
 ```
+see in  demo_centernet_deepsort.py for more useage.
 
-for ip camera, modify three lines 
-
-```
-opt.input_type = 'ipcam'
-//ip camera url (this is DAHUA camera format)
-opt.ipcam_url = 'rtsp://{0}:{1}@IPAddress:554/cam/realmonitor?channel={2}&subtype=1'
-//ipcamera camera number
-opt.ipcam_no = 1
-```
 
 and create a login file ('cam_secret.txt') containing a camera ID and password    
 for example, 
