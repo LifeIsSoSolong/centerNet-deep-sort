@@ -2,41 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62265361-b456-47fd-b205-a3f9d6f5ee0f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/_ext/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/_ext/dcn_v2/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/_ext/dcn_v2/_dcn_v2.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/_ext/dcn_v2_double/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/_ext/dcn_v2_double/_dcn_v2_double.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/build.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/build_double.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/dcn_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/dcn_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/dcn_v2_func.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/make.sh" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/make.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda.cu" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda.cu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda.cu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda.h" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda_double.cu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda_double.cu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda_double.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda.cu" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda.cu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda.cu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda_double.cu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda_double.cu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda_double.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2.h" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2_cuda.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2_cuda.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2_cuda_double.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2_cuda_double.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2_double.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2_double.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_centernet_deepsort.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo_centernet_deepsort.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch/demo_yolo3_deepsort.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch/demo_yolo3_deepsort.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,22 +13,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch/demo_yolo3_deepsort.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo_centernet_deepsort.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+              <caret line="22" column="10" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="10" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -74,7 +27,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -94,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="197" />
     <option name="y" value="74" />
     <option name="width" value="1156" />
@@ -112,12 +65,7 @@
           <expand>
             <path>
               <item name="centerNet-deep-sort" type="b2602c69:ProjectViewProjectNode" />
-              <item name="deep_sort_pytorch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="centerNet-deep-sort" type="b2602c69:ProjectViewProjectNode" />
-              <item name="deep_sort_pytorch" type="462c0819:PsiDirectoryNode" />
-              <item name="YOLOv3" type="462c0819:PsiDirectoryNode" />
+              <item name="centerNet-deep-sort" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -127,6 +75,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -188,16 +137,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo_centernet_deepsort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch/YOLOv3/detect.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1787">
@@ -209,8 +148,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch/demo_yolo3_deepsort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+        <state relative-caret-position="67">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_centernet_deepsort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="10" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

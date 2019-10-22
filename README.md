@@ -13,8 +13,7 @@ pip install --upgrade pip
 conda isntall pytorch=1.1.0 torchvision cudatoolkit=10.0 -c pytorch
 pip install -r zkk_requirments.txt
 pip install --upgrade numpy
-git clone git@github.com:LifeIsSoSolong/centerNet-deep-sort.git
-git checkout dev
+git clone -b dev git@github.com:LifeIsSoSolong/centerNet-deep-sort.git
 
 cd CenterNet/src/lib/models/networks/DCVv2/
 ./make.sh
