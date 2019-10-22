@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch" vcs="Git" />
+  </component>
+</project>

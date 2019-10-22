@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62265361-b456-47fd-b205-a3f9d6f5ee0f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/_ext/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/_ext/dcn_v2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/_ext/dcn_v2/_dcn_v2.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/_ext/dcn_v2_double/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/_ext/dcn_v2_double/_dcn_v2_double.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/build_double.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/dcn_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/dcn_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/dcn_v2_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/make.sh" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/make.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda.cu" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda.cu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda.cu.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda.h" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda_double.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda_double.cu.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda_double.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda.cu" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda.cu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda.cu.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda_double.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda_double.cu.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda_double.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2.h" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2_cuda.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2_cuda.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2_cuda_double.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2_cuda_double.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2_double.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/src/dcn_v2_double.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/CenterNet/src/lib/models/networks/DCNv2/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_centernet_deepsort.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo_centernet_deepsort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch/demo_yolo3_deepsort.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch/demo_yolo3_deepsort.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch/demo_yolo3_deepsort.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo_centernet_deepsort.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/demo_centernet_deepsort.py" />
+        <option value="$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch/demo_yolo3_deepsort.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/centerNet-deep-sort.iml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="197" />
+    <option name="y" value="74" />
+    <option name="width" value="1156" />
+    <option name="height" value="897" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="centerNet-deep-sort" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deep_sort_pytorch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="centerNet-deep-sort" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deep_sort_pytorch" type="462c0819:PsiDirectoryNode" />
+              <item name="YOLOv3" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62265361-b456-47fd-b205-a3f9d6f5ee0f" name="Default Changelist" comment="" />
+      <created>1571714476301</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571714476301</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="197" y="74" width="1156" height="897" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24977857" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch/YOLOv3/detector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1409">
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_centernet_deepsort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch/YOLOv3/detect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1787">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../yolov3_deepsort/deep_sort_pytorch/demo_yolo3_deepsort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

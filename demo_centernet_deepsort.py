@@ -5,7 +5,7 @@ import numpy as np
 
 #CenterNet
 import sys
-CENTERNET_PATH = '/home/asoft/centerNet-deep-sort/CenterNet/src/lib/'
+CENTERNET_PATH = '/home/kaikai/anaconda3/envs/CenterNet_DeepSort/centerNet-deep-sort/CenterNet/src/lib'
 sys.path.insert(0, CENTERNET_PATH)
 from detectors.detector_factory import detector_factory
 from opts import opts
@@ -31,7 +31,8 @@ opt.input_type = 'vid'   # for video, 'vid',  for webcam, 'webcam', for ip camer
 
 #------------------------------
 # for video
-opt.vid_path = 'MOT16-11.mp4'  #
+# opt.vid_path = 'MOT16-11.mp4'  #
+opt.vid_path = 'video3.avi'
 #------------------------------
 # for webcam  (webcam device index is required)
 opt.webcam_ind = 0
@@ -165,5 +166,7 @@ if __name__ == "__main__":
     det = Detector(opt)
 
     # det.open("D:\CODE\matlab sample code/season 1 episode 4 part 5-6.mp4")
-    det.open("MOT16-11.mp4")
+    # det.open("MOT16-11.mp4")
+    det.open("video4.avi")
+
     det.detect()
