@@ -2,12 +2,22 @@
 
 This is multi-people tracking code ( [centerNet[1]](https://github.com/xingyizhou/CenterNet) version of [yolov + deepsort[2]](https://github.com/ZQPei/deep_sort_pytorch) ), which implemented on CUDA 9.0, ubuntu 16.04, and Anaconda python 3.6. We used CenterNet for real-time object tracking.
 
+This is first version which can work on CUDA10.0, ubuntu 16.06, python3.6 and pytorch1.1.0.
+
 # Install
 
 
 ```
-conda env create -f CenterNet.yml
-pip install -r requirments.txt
+conda env create -n *** python=3.6 -y
+pip install --upgrade pip
+conda isntall pytorch=1.1.0 torchvision cudatoolkit=10.0 -c pytorch
+pip install -r zkk_requirments.txt
+pip install --upgrade numpy
+git clone git@github.com:LifeIsSoSolong/centerNet-deep-sort.git
+git checkout dev
+
+cd CenterNet/src/lib/models/networks/DCVv2/
+./make.sh
 ```
 
 
