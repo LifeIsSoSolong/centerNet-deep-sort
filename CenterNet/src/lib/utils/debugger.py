@@ -82,7 +82,12 @@ class Debugger(object):
     cv2.imshow('{}'.format(imgId), self.imgs[imgId])
     if pause:
       cv2.waitKey()
-  
+
+  def zkk_show_img(self, pause = False, imgId = 'default'):
+    cv2.imshow('{}'.format(imgId), self.imgs[imgId])
+    if pause:
+      cv2.waitKey(1)
+
   def add_blend_img(self, back, fore, img_id='blend', trans=0.7):
     if self.theme == 'white':
       fore = 255 - fore
@@ -198,6 +203,18 @@ class Debugger(object):
         cv2.line(self.imgs[img_id], (points[e[0], 0], points[e[0], 1]),
                       (points[e[1], 0], points[e[1], 1]), self.ec[j], 2,
                       lineType=cv2.LINE_AA)
+
+  def zkk_add_coco_hps(self, all_points, img_id='default'):
+    for points in all_points:
+        points = np.array(points, dtype=np.int32).reshape(self.num_joints, 2)
+        for j in range(self.num_joints):
+          cv2.circle(self.imgs[img_id],
+                     (points[j, 0], points[j, 1]), 3, self.colors_hp[j], -1)
+        for j, e in enumerate(self.edges):
+          if points[e].min() > 0:
+            cv2.line(self.imgs[img_id], (points[e[0], 0], points[e[0], 1]),
+                          (points[e[1], 0], points[e[1], 1]), self.ec[j], 2,
+                          lineType=cv2.LINE_AA)
 
   def add_points(self, points, img_id='default'):
     num_classes = len(points)
